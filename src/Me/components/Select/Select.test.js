@@ -1,6 +1,6 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import Select from './';
-import { render } from '@testing-library/react';
 
 const options = [
   { value: 1, label: 'one' },
@@ -45,8 +45,8 @@ describe('Select component', () => {
       />
     );
 
-    expect(getByText('one')).toBeInTheDocument();
-    expect(getByText('two')).toBeInTheDocument();
-    expect(getByText('Reached max items')).toBeInTheDocument();
+    getByText('one');
+    getByText('two');
+    getByText('Reached max items');
   });
 });
