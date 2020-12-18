@@ -19,7 +19,7 @@ const StyledInput = styled.input`
   }
 `;
 
-export const Input = props => {
+export const Input = ({ value, ...props }) => {
   const id = useContext(formFieldContext);
-  return <StyledInput id={id} {...props} />;
+  return <StyledInput id={id} value={value ?? ''} {...props} />;
 };
