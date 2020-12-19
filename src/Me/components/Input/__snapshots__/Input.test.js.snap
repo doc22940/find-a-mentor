@@ -35,5 +35,6 @@ exports[`Input component renders properly 1`] = `
 <input
   class="c0"
   placeholder="test"
+  value="test"
 />
 `;
